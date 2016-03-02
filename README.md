@@ -74,9 +74,9 @@ Every 5 minutes, this timer puts a message on the queue that will be handled in 
 
 Within your worker module, you must add the handler for these messages
 
-  this.on('globalStoreStarted', function() {
-    sessions.expiryHandler(this);
-  });
+      this.on('globalStoreStarted', function() {
+        sessions.expiryHandler(this);
+      });
 
 This handler tells the worker to find all Sessions that have expired and clear them down.
 
@@ -113,7 +113,7 @@ access to the Session the next time the user or client requires access to their 
 - expired        (boolean: read only)
 - authenticated  (boolean: read/write) Set this to true when the user successfully logs in (if relevant)
 - expiryTime     (integer: read/write) The number of seconds before the Session will expire if inactive
-- data           (GlobalNode Object) Points to the underlying Session persistent data
+- data           (ewd-globals GlobalNode Object) Points to the underlying Session persistent data
 
 #### Methods
 
