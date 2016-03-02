@@ -1,6 +1,6 @@
 {
   "name": "ewd-globals-session",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Session management using ewd-globals",
   "main": "index.js",
   "scripts": {
